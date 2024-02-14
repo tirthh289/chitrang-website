@@ -1,0 +1,137 @@
+
+/*** 
+=============================================
+    Testimonial Style1 Area Css
+=============================================
+***/
+.testimonial-style1-area{
+    position: relative;
+    display: block;
+    background: #333029;
+    padding: 0px 0 0px;
+    z-index: 1;
+}
+.testimonial-style1-area .layer-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 640px;
+    width: 100%;
+    opacity: .04;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.testimonial-style1-content {
+    position: relative;
+    display: block;
+    padding-top: 120px;
+    padding-right: 90px;
+}
+
+.testimonial-carousel{
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+.testimonial-style1-content .sec-title{
+    padding-bottom: 38px;    
+} 
+.testimonial-style1-content .sec-title .sub-title h3 {
+    color: #a4a097;
+}
+.testimonial-style1-content .sec-title h2 {
+    color: #ffffff;
+}
+.single-testimonial-style1{
+    position: relative;
+    display: block;
+}
+.single-testimonial-style1 .text-holder{
+    position: relative;
+    display: block;
+}
+.single-testimonial-style1 .text-holder .text-box{
+    position: relative;
+    display: block;
+}
+.single-testimonial-style1 .text-holder .text-box p{
+    color: #a4a097;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.single-testimonial-style1 .client-info {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 34px;
+}
+.single-testimonial-style1 .client-info .image-box{
+    position: relative;
+    display: block;
+    width: 80px;
+}
+.single-testimonial-style1 .client-info .image-box img{
+    width: 100%;
+    border-radius: 50%;
+}
+.single-testimonial-style1 .client-info .title-box{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+.single-testimonial-style1 .client-info .title-box h3{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.single-testimonial-style1 .client-info .title-box span{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.testimonial-style2-image-box{
+    position: relative;
+    display: block;
+}
+.testimonial-style2-image-box img{
+    max-width: none;
+    float: left;
+}
+.testimonial-style2-image-box .bg-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 95px;
+}
+.testimonial-style2-image-box .bg-box:before {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-size: 80px;
+    text-align: center;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.testimonial-style2-image-box .title-box {
+    position: absolute;
+    left: -108px;
+    top: 176px;
+    -webkit-transform: rotate(90deg) translateX(50%);
+    -ms-transform: rotate(90deg) translateX(50%);
+    transform: rotate(90deg) translateX(50%);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+}

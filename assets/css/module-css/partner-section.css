@@ -1,0 +1,104 @@
+
+/*** 
+=============================================
+    Partner Area Css
+=============================================
+***/
+.partner-area {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+.partner-area .border-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ebe5db;
+    content: "";
+    z-index: 10;
+}
+.partner-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.single-partner-logo-box {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 20%;
+    max-width: 20%;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.single-partner-logo-box a {
+    position: relative;
+    display: inline-block;
+}
+.single-partner-logo-box a img {
+    opacity: .20;
+    transition: all 0.2s ease-in-out 0.1s;
+}
+.single-partner-logo-box:hover a img{
+    opacity: 0.70;
+    transition: all 0.8s ease-in-out 0.1s;
+}
+/*** 
+=============================================
+    Partner Style2 Area Css
+=============================================
+***/
+.partner-style2-area {
+    position: relative;
+    display: block;
+    background: #f6f2eb;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.partner-area.about-page{
+    position: relative;
+    display: block;
+    background: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 80px;    
+}
+
+
+.partner-area.element-page1{
+    padding-bottom: 75px;
+}
+
+
+.partner-area.element-page{
+    padding: 115px 0 120px;
+}
+.element-page .single-partner-logo-box {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.element-page .owl-carousel.owl-dot-style1 .owl-dots {
+    margin-top: 50px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

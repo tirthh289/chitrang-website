@@ -1,0 +1,75 @@
+
+
+/*** 
+=============================================
+    Breadcrumb area style
+=============================================
+***/
+.breadcrumb-area {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 126px 0 122px;
+    z-index: 10;
+}
+
+.breadcrumb-area .inner-content {
+    position: relative;
+    display: block;
+}
+.breadcrumb-menu ul {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.breadcrumb-menu ul li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    color: #84827c;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-right: 10px;
+    padding-right: 15px;
+    text-transform: capitalize;
+}
+.breadcrumb-menu ul li:after {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 5px;
+    height: 1px;
+    background: #84827c;
+    content: "";
+}
+.breadcrumb-menu ul li:last-child:after{
+    display: none;
+}
+.breadcrumb-menu ul li:last-child{
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb-menu ul li a {
+    color: #84827c;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+
+.breadcrumb-area .title {
+    position: relative;
+    display: block;
+}
+.breadcrumb-area .title h2{
+    color: #333029;
+    font-size: 70px;
+    line-height: 1.05em;
+    font-weight: 800;
+    text-transform: capitalize;
+}
