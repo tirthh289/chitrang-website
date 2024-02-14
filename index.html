@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/rtl.css">
     <link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png" sizes="16x16">
 
@@ -36,6 +36,27 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+
+    <style>
+        /* Only for demo purposes. */
+            /* Start Gallery CSS */
+            .thumb {
+                margin-bottom: 15px;
+            }
+            .thumb:last-child {
+                margin-bottom: 0;
+            }
+            /* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
+            .thumb 
+            figure img {
+            /* filter: grayscale(100%); */
+            transition: .3s ease-in-out;
+            }
+            .thumb 
+            figure:hover img {
+            filter: grayscale(0);
+            }
+    </style>
     
 </head>
 
@@ -734,6 +755,72 @@
 </section> 
 <!--End Partner Area--> 
 
+
+<!-- gallery -->
+
+<section class="container">
+	<h1 class="my-4 text-center text-lg-left">Image Gallery</h1>
+	<div class="row gallery">
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=1">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=1" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=2">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=2" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=3">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=3" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=4">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=4" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=5">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=5" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=6">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=6" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=6">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=6" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=7">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=7" alt="Random Image"></figure>
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a href="https://picsum.photos/940/650?random=8">
+				<figure><img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=8" alt="Random Image"></figure>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- gallery end -->
+
+
+
 <!--Start Contact Form Style1 Area-->
 <section class="contact-form-style1-area">
     <div class="container">
@@ -993,6 +1080,29 @@
     <span class="fa fa-angle-up"></span>
 </button> 
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.5/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+
+    <script>
+        $(document).ready(function() {
+	$(".gallery").magnificPopup({
+		delegate: "a",
+		type: "image",
+		tLoading: "Loading image #%curr%...",
+		mainClass: "mfp-img-mobile",
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+		}
+	});
+});
+    </script>
 
 
 <script src="assets/js/jquery.js"></script>
