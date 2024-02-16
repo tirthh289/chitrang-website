@@ -1176,6 +1176,7 @@ select:focus {
     position: relative;
     display: block;
     padding: 3px 5px;
+    border-radius: 8px;
 }
 
 .mobile-menu{
@@ -2468,7 +2469,7 @@ select:focus {
     margin: 0 0 9px;
 }
 .booking-number-box .title h2{
-    font-size: 46px;
+    font-size: 38px;
     line-height: 50px;
     font-weight: 800;    
 }
@@ -2786,7 +2787,7 @@ select:focus {
 }
 .single-footer-widget .footer-contact-info ul li .title p{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     margin:  0;
 }
 .single-footer-widget .footer-contact-info ul li .title p a{
